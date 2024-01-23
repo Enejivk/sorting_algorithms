@@ -109,3 +109,28 @@ Please declare the prototype of the functions `print_array` and `print_list` in 
 ## Data Structure
 
 Please use the following data structure for doubly linked list:
+
+```
+/**
+ * struct listint_s - Doubly linked list node
+ *
+ * @n: Integer stored in the node
+ * @prev: Pointer to the previous element of the list
+ * @next: Pointer to the next element of the list
+ */
+typedef struct listint_s
+{
+    const int n;
+    struct listint_s *prev;
+    struct listint_s *next;
+} listint_t;
+```
+
+- Please, note this format is used for Quiz and Task questions.
+- O(n)
+- O(n!)
+- n square -> O(n^2)
+- log(n) -> O(log(n))
+- n * log(n) -> O(nlog(n))
+- n + k -> O(n+k)
+…
